@@ -3,4 +3,6 @@
     <string name="barcode_text">Barcode Text</string>
     <string name="textview">TextView</string>
     <string name="system_time">System Time</string>
+    <string name="button">Button</string>
+    <string name="submit">Submit</string>
 </resources>

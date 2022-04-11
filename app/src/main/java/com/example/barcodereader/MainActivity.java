@@ -14,6 +14,8 @@ import android.os.Bundle;
 import android.util.SparseArray;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 import com.google.android.gms.vision.CameraSource;
@@ -34,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
     private ToneGenerator toneGen1;
     private TextView barcodeText, systime;
     private String barcodeData;
+    Button submit;
 
     private TextView dateTimeDisplay;
     private Calendar calendar;
@@ -50,8 +53,16 @@ public class MainActivity extends AppCompatActivity {
         surfaceView = findViewById(R.id.surface_view);
         barcodeText = findViewById(R.id.barcode_text);
         systime= findViewById(R.id.timeout);
+        submit=findViewById(R.id.submitbtn);
 
         kelsaShuruMaadu();
+
+        submit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                
+            }
+        });
     }
 
     private void kelsaShuruMaadu() {
